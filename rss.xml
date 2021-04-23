@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Ganttee</title>
+        <link>https://ganttee.cn/</link>
+        <description>记录点滴成长</description>
+        <generator>Hugo 0.82.1 https://gohugo.io/</generator>
+        
+            <language>zh-CN</language>
+        
+        
+            <managingEditor>ganttee@outlook.com (ganttee)</managingEditor>
+        
+        
+            <webMaster>ganttee@outlook.com (ganttee)</webMaster>
+        
+        
+            <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+        
+        <lastBuildDate>Fri, 23 Apr 2021 02:37:09 &#43;0000</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://ganttee.cn/rss.xml" />
+        
+        
+    </channel>
+</rss>

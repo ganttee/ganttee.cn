@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+    <title type="text">Ganttee</title>
+    <subtitle type="html">记录点滴成长</subtitle>
+    <updated>2021-04-23T02:37:09&#43;00:00</updated>
+    <id>https://ganttee.cn/</id>
+    <link rel="alternate" type="text/html" href="https://ganttee.cn/" />
+    <link rel="self" type="application/atom&#43;xml" href="https://ganttee.cn/atom.xml" />
+    <author>
+            <name>ganttee</name>
+            <uri>https://ganttee.cn/</uri>
+            
+                <email>ganttee@outlook.com</email>
+            </author>
+    <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    <generator uri="https://gohugo.io/" version="0.82.1">Hugo</generator>
+</feed>
