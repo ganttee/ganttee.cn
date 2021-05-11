@@ -10,7 +10,7 @@
         <title>Ganttee</title>
         <link>https://ganttee.cn/</link>
         <description>记录点滴成长</description>
-        <generator>Hugo 0.82.1 https://gohugo.io/</generator>
+        <generator>Hugo 0.83.1 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -23,10 +23,90 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sat, 24 Apr 2021 16:25:11 &#43;0000</lastBuildDate>
+        <lastBuildDate>Tue, 11 May 2021 09:46:19 &#43;0000</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://ganttee.cn/rss.xml" />
         
+        
+            <item>
+                <title>bootstrap中点击按钮会自动刷新页面</title>
+                <link>https://ganttee.cn/posts/1/</link>
+                <guid isPermaLink="true">https://ganttee.cn/posts/1/</guid>
+                <pubDate>Tue, 11 May 2021 17:21:18 &#43;0800</pubDate>
+                
+                
+                
+                    <description>&lt;blockquote&gt;
+&lt;p&gt;最近做项目的时候，有前端WEB页面需求，自己就又码了前端😂，用了bootstrap。今天遇到一个坑，记录一下。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;html页面用bootstrap按钮组件的时候，每次按钮按下以后，页面会自动刷新，百思不得其解。折腾了半天，才发现是因为按钮的属性设置导致的。&lt;/p&gt;
+&lt;p&gt;在bootstrap中，按钮的&lt;code&gt;type&lt;/code&gt;要设置为&lt;code&gt;button&lt;/code&gt;，如果不设置或者设置为&lt;code&gt;submit&lt;/code&gt;都会在click事件后，触发自动刷新页面。
+解决办法也一目了然了，将&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;button&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;submit&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;btn btn-primary&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;btn-play&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;播放&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;button&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;改为&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;button&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;button&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;btn btn-primary&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;btn-play&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;播放&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;button&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;即可。😊&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://ganttee.cn/categories/web/">web</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://ganttee.cn/tags/web/">web</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://ganttee.cn/tags/bootstrap/">bootstrap</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://ganttee.cn/tags/html/">html</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://ganttee.cn/tags/button/">button</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
     </channel>
 </rss>
