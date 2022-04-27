@@ -2,7 +2,7 @@
 title: "Git创建一个空白的分支"
 # description:
 date: 2021-07-13T10:20:53+08:00
-draft: true
+draft: false
 tags:
 - git
 categories:
