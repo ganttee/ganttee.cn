@@ -2,16 +2,19 @@
 title: "Python Spider Js Render"
 # description:
 date: 2021-06-29T14:54:23+08:00
-draft: false
-# tags:
-# - ...
-# categories:
-# - ...
+draft: true
+tags:
+- 爬虫
+- selenium
+- splash
+categories:
+- 爬虫
 ---
 
 开源爬虫库很多，功能都差不多，比如大部分都不支持JS动态加载的页面:)，但是现在大部分网页都是JS动态加载的。后文以Python为例介绍几种支持JS动态加载网页的爬取方法。
 
-##  什么是爬虫？
+##  什么是网络爬虫？
+网络爬虫一般指通过技术抓取公开网站网页上数据。
 ##  如何在爬虫时，支持JS动态加载的页面？
 ### 定制开发---性能高但开发成本及灵活性低
 > 原理: 定向分析所要爬取的网页，用Python模拟JS的行为
