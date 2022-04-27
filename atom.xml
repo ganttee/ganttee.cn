@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Ganttee</title>
     <subtitle type="html">记录点滴成长</subtitle>
-    <updated>2022-04-27T03:14:33&#43;00:00</updated>
+    <updated>2022-04-27T03:25:00&#43;00:00</updated>
     <id>https://ganttee.cn/</id>
     <link rel="alternate" type="text/html" href="https://ganttee.cn/" />
     <link rel="self" type="application/atom&#43;xml" href="https://ganttee.cn/atom.xml" />
@@ -17,10 +17,240 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.97.3">Hugo</generator>
         <entry>
+            <title type="text">Python Xlrd不支持xlsx</title>
+            <link rel="alternate" type="text/html" href="https://ganttee.cn/posts/python-xlrd%E4%B8%8D%E6%94%AF%E6%8C%81xlsx/" />
+            <id>https://ganttee.cn/posts/python-xlrd%E4%B8%8D%E6%94%AF%E6%8C%81xlsx/</id>
+            <updated>2022-04-27T03:24:58&#43;00:00</updated>
+            <published>2021-07-13T17:12:56&#43;08:00</published>
+            
+            <summary type="html">新版本的xlrd不支持读取xlsx的Excel文件了，那么只需要回退版本即可。 解决办……</summary>
+            
+                <content type="html">&lt;p&gt;新版本的xlrd不支持读取xlsx的Excel文件了，那么只需要回退版本即可。
+解决办法如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip uninstall xlrd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install &lt;span class=&#34;nv&#34;&gt;xlrd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;1.2.0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ganttee.cn/tags/python/" term="python" label="python" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ganttee.cn/tags/xlrd/" term="xlrd" label="xlrd" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ganttee.cn/tags/xlsx/" term="xlsx" label="xlsx" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ganttee.cn/tags/excel/" term="excel" label="excel" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Git创建一个空白的分支</title>
+            <link rel="alternate" type="text/html" href="https://ganttee.cn/posts/git%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%A9%BA%E7%99%BD%E7%9A%84%E5%88%86%E6%94%AF/" />
+            <id>https://ganttee.cn/posts/git%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%A9%BA%E7%99%BD%E7%9A%84%E5%88%86%E6%94%AF/</id>
+            <updated>2022-04-27T03:24:58&#43;00:00</updated>
+            <published>2021-07-13T10:20:53&#43;08:00</published>
+            
+            <summary type="html">1.创建一个空白的分支的需求 在Git中创建分支，是必须有一个父节点的，也就是说必须在……</summary>
+            
+                <content type="html">&lt;h3 id=&#34;1创建一个空白的分支的需求&#34;&gt;1.创建一个空白的分支的需求&lt;/h3&gt;
+&lt;p&gt;在Git中创建分支，是必须有一个父节点的，也就是说必须在已有的分支上来创建新的分支，如果工程已经进行了一段时间，这个时候是无法创建空分支的。但是有时候就是需要创建一个空白的分支。&lt;/p&gt;
+&lt;h3 id=&#34;2解决方法&#34;&gt;2.解决方法：&lt;/h3&gt;
+&lt;h4 id=&#34;21-使用-git-checkout的--orphan参数&#34;&gt;2.1 使用 git checkout的--orphan参数:&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git checkout --orphan emptybranch
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;该命令会生成一个叫emptybranch的分支，该分支会包含父分支的所有文件。但新的分支不会指向任何以前的提交，就是它没有历史，如果你提交当前内容，那么这次提交就是这个分支的首次提交。&lt;/p&gt;
+&lt;h4 id=&#34;22-删除所有文件&#34;&gt;2.2 删除所有文件：&lt;/h4&gt;
+&lt;p&gt;想要空分支，所以需要把当前内容全部删除，用git命令&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git rm -rf . //注意：最后的‘.’不能少。
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;23-提交分支&#34;&gt;2.3 提交分支：&lt;/h4&gt;
+&lt;p&gt;如果没有任何文件提交的话，分支是看不到的，所以我们需要创建一个新文件，然后提交则新创建的branch就会显示出来。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#39;# new branch&amp;#39; &amp;gt;&amp;gt; README.md
+
+git add README.md
+
+git commit -m &amp;#39;new branch&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;24-最后push到远程仓库则新的空分支就创建成功了&#34;&gt;2.4 最后push到远程仓库，则新的空分支就创建成功了。&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git push origin emptybranch
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;参考：https://www.jianshu.com/p/a18487d987ac&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ganttee.cn/categories/git/" term="git" label="git" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ganttee.cn/tags/git/" term="git" label="git" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Python Spider Js Render</title>
+            <link rel="alternate" type="text/html" href="https://ganttee.cn/posts/python-spider-js-render/" />
+            <id>https://ganttee.cn/posts/python-spider-js-render/</id>
+            <updated>2022-04-27T03:24:58&#43;00:00</updated>
+            <published>2021-06-29T14:54:23&#43;08:00</published>
+            
+            <summary type="html">开源爬虫库很多，功能都差不多，比如大部分都不支持JS动态加载的页面:)，但是现在大部……</summary>
+            
+                <content type="html">&lt;p&gt;开源爬虫库很多，功能都差不多，比如大部分都不支持JS动态加载的页面:)，但是现在大部分网页都是JS动态加载的。后文以Python为例介绍几种支持JS动态加载网页的爬取方法。&lt;/p&gt;
+&lt;h2 id=&#34;什么是网络爬虫&#34;&gt;什么是网络爬虫？&lt;/h2&gt;
+&lt;p&gt;网络爬虫一般指通过技术抓取公开网站网页上数据。&lt;/p&gt;
+&lt;h2 id=&#34;如何在爬虫时支持js动态加载的页面&#34;&gt;如何在爬虫时，支持JS动态加载的页面？&lt;/h2&gt;
+&lt;h3 id=&#34;定制开发---性能高但开发成本及灵活性低&#34;&gt;定制开发---性能高但开发成本及灵活性低&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;原理: 定向分析所要爬取的网页，用Python模拟JS的行为&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;使用一些浏览器自动化框架库来爬取站点---通用性高开发成本低且灵活但效率低&#34;&gt;使用一些浏览器自动化框架/库来爬取站点---通用性高开发成本低且灵活但效率低&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;原理: 模拟浏览器处理JS。利用外部JS Engine执行JS，并获取其结果&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;1selenium-webdriver&#34;&gt;1.Selenium WebDriver&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Selenium 是一系列工具和库的综合项目，这些工具和库支持 web 浏览器的自动化。
+WebDriver 以本地化方式驱动浏览器，就像用户在本地或使用 Selenium 服务器的远程机器上所做的那样，这标志着浏览器自动化的飞跃。
+Selenium WebDriver 指的是语言绑定和各个浏览器控制代码的实现。 这通常被称为 WebDriver。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/tryolabs/requestium&#34;&gt;Requestium&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2dryscrape&#34;&gt;2.dryscrape&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;dryscrape is a lightweight web scraping library for Python. It uses a headless Webkit instance to evaluate Javascript on the visited pages. This enables painless scraping of plain web pages as well as Javascript-heavy “Web 2.0” applications like Facebook.
+dryscrape 是一个轻量级的 Python 网页抓取库。它使用无头 Webkit 实例来评估访问页面上的 Javascript。这使得可以轻松抓取普通网页以及像 Facebook 这样的 Javascript 密集型“Web 2.0”应用程序。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;get_url_dynamic2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;driver&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;webdriver&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Firefox&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#调用本地的火狐浏览器，Chrom 甚至 Ie 也可以的&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;driver&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#请求页面，会打开一个浏览器窗口&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;html_text&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;driver&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;page_source&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;driver&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;quit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;#print html_text&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;html_text&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;get_text_line&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get_url_dynamic2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#将输出一条文本&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;3splash&#34;&gt;3.Splash&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Splash is a javascript rendering service. It&#39;s a lightweight browser with an HTTP API, implemented in Python using Twisted and QT.
+Splash 是一个 javascript 渲染服务。它是一个带有 HTTP API 的轻量级浏览器，使用 Twisted 和 QT 在 Python 中实现。
+最简单的使用方法是docker起一个Splash容器，然后调用Splash HTTP接口，详见&lt;a href=&#34;https://splash.readthedocs.io/en/stable/install.html&#34;&gt;官方说明&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;1pull-the-image&#34;&gt;1.Pull the image:&lt;/h5&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo docker pull scrapinghub/splash
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;2start-the-container&#34;&gt;2.Start the container:&lt;/h5&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo docker run -it -p 8050:8050 --rm scrapinghub/splash
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;3splash-is-now-available-at-0000-at-port-8050-http&#34;&gt;3.Splash is now available at 0.0.0.0 at port 8050 (http).&lt;/h5&gt;
+&lt;h4 id=&#34;4pyppeteerhttpsgithubcompyppeteerpyppeteer&#34;&gt;4.&lt;a href=&#34;https://github.com/pyppeteer/pyppeteer&#34;&gt;Pyppeteer&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;puppeteer JavaScript（无头）chrome/chromium 浏览器自动化库的非官方 Python 端口
+具体用法见&lt;a href=&#34;https://github.com/pyppeteer/pyppeteer#installation&#34;&gt;官方说明&lt;/a&gt;&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ganttee.cn/categories/%E7%88%AC%E8%99%AB/" term="爬虫" label="爬虫" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://ganttee.cn/tags/%E7%88%AC%E8%99%AB/" term="爬虫" label="爬虫" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ganttee.cn/tags/selenium/" term="selenium" label="selenium" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://ganttee.cn/tags/splash/" term="splash" label="splash" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">bootstrap中点击按钮会自动刷新页面</title>
             <link rel="alternate" type="text/html" href="https://ganttee.cn/posts/1/" />
             <id>https://ganttee.cn/posts/1/</id>
-            <updated>2022-04-27T03:14:31&#43;00:00</updated>
+            <updated>2022-04-27T03:24:58&#43;00:00</updated>
             <published>2021-05-11T17:21:18&#43;08:00</published>
             
             <summary type="html">最近做项目的时候，有前端WEB页面需求，自己就又码了前端😂，用了bootstrap。……</summary>
