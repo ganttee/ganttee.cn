@@ -2,9 +2,9 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
-    <title type="text">Ganttee</title>
+    <title type="text">GANTTEE.CN</title>
     <subtitle type="html">记录点滴成长</subtitle>
-    <updated>2022-04-27T03:25:00&#43;00:00</updated>
+    <updated>2022-04-30T11:53:58&#43;00:00</updated>
     <id>https://ganttee.cn/</id>
     <link rel="alternate" type="text/html" href="https://ganttee.cn/" />
     <link rel="self" type="application/atom&#43;xml" href="https://ganttee.cn/atom.xml" />
@@ -15,12 +15,12 @@
                 <email>ganttee@outlook.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
-    <generator uri="https://gohugo.io/" version="0.97.3">Hugo</generator>
+    <generator uri="https://gohugo.io/" version="0.98.0">Hugo</generator>
         <entry>
             <title type="text">Python Xlrd不支持xlsx</title>
             <link rel="alternate" type="text/html" href="https://ganttee.cn/posts/python-xlrd%E4%B8%8D%E6%94%AF%E6%8C%81xlsx/" />
             <id>https://ganttee.cn/posts/python-xlrd%E4%B8%8D%E6%94%AF%E6%8C%81xlsx/</id>
-            <updated>2022-04-27T03:24:58&#43;00:00</updated>
+            <updated>2022-04-30T11:53:57&#43;00:00</updated>
             <published>2021-07-13T17:12:56&#43;08:00</published>
             
             <summary type="html">新版本的xlrd不支持读取xlsx的Excel文件了，那么只需要回退版本即可。 解决办……</summary>
@@ -81,7 +81,7 @@
             <title type="text">Git创建一个空白的分支</title>
             <link rel="alternate" type="text/html" href="https://ganttee.cn/posts/git%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%A9%BA%E7%99%BD%E7%9A%84%E5%88%86%E6%94%AF/" />
             <id>https://ganttee.cn/posts/git%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%A9%BA%E7%99%BD%E7%9A%84%E5%88%86%E6%94%AF/</id>
-            <updated>2022-04-27T03:24:58&#43;00:00</updated>
+            <updated>2022-04-30T11:53:57&#43;00:00</updated>
             <published>2021-07-13T10:20:53&#43;08:00</published>
             
             <summary type="html">1.创建一个空白的分支的需求 在Git中创建分支，是必须有一个父节点的，也就是说必须在……</summary>
@@ -139,7 +139,7 @@ git commit -m &amp;#39;new branch&amp;#39;
             <title type="text">Python Spider Js Render</title>
             <link rel="alternate" type="text/html" href="https://ganttee.cn/posts/python-spider-js-render/" />
             <id>https://ganttee.cn/posts/python-spider-js-render/</id>
-            <updated>2022-04-27T03:24:58&#43;00:00</updated>
+            <updated>2022-04-30T11:53:57&#43;00:00</updated>
             <published>2021-06-29T14:54:23&#43;08:00</published>
             
             <summary type="html">开源爬虫库很多，功能都差不多，比如大部分都不支持JS动态加载的页面:)，但是现在大部……</summary>
@@ -250,7 +250,7 @@ Splash 是一个 javascript 渲染服务。它是一个带有 HTTP API 的轻量
             <title type="text">bootstrap中点击按钮会自动刷新页面</title>
             <link rel="alternate" type="text/html" href="https://ganttee.cn/posts/1/" />
             <id>https://ganttee.cn/posts/1/</id>
-            <updated>2022-04-27T03:24:58&#43;00:00</updated>
+            <updated>2022-04-30T11:53:57&#43;00:00</updated>
             <published>2021-05-11T17:21:18&#43;08:00</published>
             
             <summary type="html">最近做项目的时候，有前端WEB页面需求，自己就又码了前端😂，用了bootstrap。……</summary>
