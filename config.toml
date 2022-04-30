@@ -2,7 +2,7 @@
 # 站点配置
 
 baseURL = "https://ganttee.cn/"
-title = "Ganttee"
+title = "GANTTEE.CN"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 # 版权信息（支持 Markdown）
@@ -102,7 +102,7 @@ uglyURLs = false
     # 网站（默认值：baseURL）
     website = "https://ganttee.cn/"
     # 推特
-    twitter = ""
+    # twitter = ""
 
 # 相关文章
 [related]
@@ -911,13 +911,13 @@ uglyURLs = false
     #      SVG，则可留空（""）品牌栏字体。
 
     # 品牌栏
-    fontFamilySiteBrand = ""
+    fontFamilySiteBrand = "'Montserrat', 'Noto Sans SC', serif"
     # 菜单栏
     fontFamilyMenu = ""
     # 文章标题、文章副标题、列表标题、列表的年份和月份标题、相关文章标题、文章上下篇标题、表格的表头、定义列表中的术语
-    fontFamilyTitle = "'Comfortaa', 'Noto Sans SC', serif"
+    fontFamilyTitle = "'Montserrat', 'Noto Sans SC', serif"
     # 分节标题、目录标题
-    fontFamilyHeadings = "'Comfortaa', 'Noto Sans SC', serif"
+    fontFamilyHeadings = "'Montserrat', 'Noto Sans SC', serif"
     # 代码、上标、文章元信息、文章更新徽章、文章的 Git 版本信息、极简页脚、不蒜子站点浏览计数
     fontFamilyCode = "'Source Code Pro', 'Noto Sans SC', monospace"
     # 引用
@@ -936,7 +936,9 @@ uglyURLs = false
     # Embed fonts link
     #fontsLink = "https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Comfortaa:wght@700&display=swap"
     # 网络字体链接
-    fontsLink = "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Noto+Sans+SC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap&family=Comfortaa:wght@700&display=swap"
+    # fontsLink = "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Noto+Sans+SC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap&family=Comfortaa:wght@700&display=swap"
+    fontsLink = "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Noto+Sans+SC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap&family=Comfortaa:wght@700&display=swap&Montserrat:wght@700&display=swap"
+
     # 说明：要想读者一定体验到你设置的字体，最好
     #      采用网络字体。MemE 主题目前仅支持
     #      Google Fonts 的链接，请前往
